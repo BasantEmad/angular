@@ -1,0 +1,17 @@
+.navbar-expand-lg {
+    background: linear-gradient( to left, rgb(241, 97, 169) , white 90%) !important;
+    }
+    .nav-link{
+        color: black !important;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        font-size: 30px;
+        color: purple;
+    }
+    
+    
+    
+    

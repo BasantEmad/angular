@@ -1,0 +1,34 @@
+.contactmain{
+    background-color: black;
+}
+h1{
+    font-size: 70px !important;
+    font-weight: 800 !important;
+    text-align: center;
+    margin-bottom: 50px !important;
+    
+}
+
+.name{
+    font-size: 30px;
+    color: black;
+    margin: 20px;
+}
+  input[type="name"]{
+  border-radius: 20px;
+}
+input[type="text"]{
+   border-radius: 20px;
+    }
+    input[type="phone"]{
+       border-radius: 20px;
+        }
+.btn.btn-dark:hover{
+    transform: scale(2.3);
+}
+.contact{
+    background-image: url(/assets/360_F_371630729_PJW5f58MkwVrG9DKdDOGQBGY3mJ3bBfr.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}

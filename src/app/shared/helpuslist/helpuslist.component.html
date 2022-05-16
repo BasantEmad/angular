@@ -1,0 +1,35 @@
+
+
+<div class="list">
+    <h1>Our way in help list</h1>
+    <div class="container col-md-6" >
+        <div class="card">
+            <div class="card-body">
+                <table class="table ">
+                    <tr>
+                          <th>id</th>
+                          <th> Name</th>
+                          <th>How you can Help</th>
+                          <th>Delete</th>
+                          <th>Edit</th>
+                    </tr>
+    
+    
+                    <tr *ngFor="let Helpus of allData">
+                        <th>{{Helpus.id}}</th>
+                        <th>{{Helpus.name}}</th>
+                        <th>{{Helpus.how}}</th>
+                        
+                        <th> <button  (click)="remove(Helpus.id)" class="btn btn-danger" >Delete</button></th>
+                        <a routerLink="/updatehelpus" class="btn btn-info">Edit</a>
+    
+                    </tr>
+                </table>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    </div>

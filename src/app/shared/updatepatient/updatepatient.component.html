@@ -1,0 +1,30 @@
+<div class="add">
+
+<h1>Update Patients</h1>
+    
+    <div class="container" col-md-6>
+        <div class="card">
+            <div class="card-body">
+
+                <div class="form-group">
+                    <label > Patient Name</label>
+                    <input  type="text " [(ngModel)]="object.name" class="form-control"  >
+
+                </div>
+
+                <div class="form-group">
+                    <label > Treatment type</label>
+                    <input type="text " [(ngModel)]="object.treatment" class="form-control" placeholder="chemo , radio or surgery ">
+                </div>
+                <button (click)="update()" class="btn block w-30 ">Send data </button>
+                
+
+            
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+

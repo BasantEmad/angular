@@ -1,0 +1,34 @@
+
+<div class="list">
+<h1>Patient list</h1>
+<div class="container col-md-6" >
+    <div class="card">
+        <div class="card-body">
+            <table class="table ">
+                <tr>
+                      <th>id</th>
+                      <th> name</th>
+                      <th>treatment</th>
+                      <th>Delete</th>
+                      <th>Edit</th>
+                </tr>
+
+
+                <tr *ngFor="let patient of allData">
+                    <th>{{patient.id}}</th>
+                    <th>{{patient.name}}</th>
+                    <th>{{patient.treatment}}</th>
+                    
+                    <th> <button  (click)="remove(patient.id)" class="btn btn-danger" >Delete</button></th>
+                    <a routerLink="/updatepatient" class="btn btn-info">Edit</a>
+
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>

@@ -1,0 +1,33 @@
+<div class="add">
+    <h1>ADD Doctors</h1>
+        
+        <div class="container" col-md-6>
+            <div class="card">
+                <div class="card-body">
+    
+                    <div class="form-group">
+                        <label > Doctor Name</label>
+                        <input  type="text " #userName= "ngModel" required minlength="3" [(ngModel)]="object.name" class="form-control"  >
+                        <div *ngIf="userName.touched && userName.invalid "class="alert alert-danger">
+                            Please Enter Valid Name
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label > Medical Specialties</label>
+                        <input type="text "  #mdicalspecialties= "ngModel" required minlength="3"  [(ngModel)]="object.medicalspecialties" class="form-control" placeholder="chemo , radio or surgery ">
+                        <div *ngIf="mdicalspecialties.touched && mdicalspecialties.invalid "class="alert alert-danger">
+                            Please Enter Valid Data
+                        </div>
+                    </div>
+                    <button (click)="save()" class="btn block w-30 ">Send data :)</button>
+    
+                
+    
+            </div>
+    
+        </div>
+    </div>
+    
+    </div>
+    

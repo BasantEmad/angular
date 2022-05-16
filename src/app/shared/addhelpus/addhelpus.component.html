@@ -1,0 +1,35 @@
+
+
+<div class="add">
+    <h1>How can you help Us</h1>
+        
+        <div class="container" col-md-6>
+            <div class="card">
+                <div class="card-body">
+    
+                    <div class="form-group">
+                        <label > Your name</label>
+                        <input  type="text "#userName= "ngModel" required minlength="3" [(ngModel)]="object.name" class="form-control"  >
+                        <div *ngIf="userName.touched && userName.invalid "class="alert alert-danger">
+                            Please Enter Valid Name
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label > How can you help Us</label>
+                        <input type="text " #how= "ngModel" required minlength="3"[(ngModel)]="object.how" class="form-control" placeholder="sponorship , volunteer OR donation programs ">
+                        <div *ngIf="how.touched && how.invalid "class="alert alert-danger">
+                            Please Enter Valid Name
+                        </div>
+                    </div>
+                    <button (click)="save()" class="btn block w-30 ">Send data :)</button>
+    
+                
+    
+            </div>
+    
+        </div>
+    </div>
+    
+    </div>
+    
